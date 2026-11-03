@@ -1,6 +1,15 @@
 <!doctype html>
 <html lang="en">
 <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JQYV06V28Y"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JQYV06V28Y');
+</script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f7f3e9">
@@ -120,59 +129,13 @@
       font: 11px/1.6 Arial, sans-serif;
       letter-spacing: .04em;
     }
-    .footer a {
-  color: var(--rose);
-  text-decoration: none;
-  font-weight: 600;
-}
-
-.footer a:hover {
-  text-decoration: underline;
-} }
+    .footer span { color: var(--rose); }
     @media (max-width: 480px) {
       body { padding-inline: 13px; }
       .generator { border-radius: 19px; }
       .copy { margin: 10px 0 0; }
       .generate, .copy { min-width: 190px; }
     }
-.feedback-section {
-  margin-top: 35px;
-  padding: 25px 20px;
-  border-radius: 22px;
-  background: linear-gradient(135deg, #edf5ed, #f1edf8, #fceef2);
-  text-align: center;
-}
-
-.feedback-section h2 {
-  color: #648b72;
-  font-size: 1.4rem;
-  margin-bottom: 8px;
-}
-
-.feedback-section p {
-  color: #7d8982;
-  font-size: 0.95rem;
-  line-height: 1.6;
-  max-width: 500px;
-  margin: 0 auto 18px;
-}
-
-.feedback-button {
-  display: inline-block;
-  padding: 12px 25px;
-  border-radius: 30px;
-  background: #8fb99a;
-  color: #fffefa;
-  text-decoration: none;
-  font-weight: 600;
-  transition: background 0.2s ease, transform 0.2s ease;
-}
-
-.feedback-button:hover {
-  background: #729c7d;
-  transform: translateY(-2px);
-}
-
   </style>
 </head>
 <body>
@@ -195,21 +158,23 @@
     </section>
 
 <section class="feedback-section">
-  <h2>Have an idea? 💌</h2>
-  <p>Have a word you'd love to see added, or some feedback to share? I'd love to hear from you!</p>
-  <a class="feedback-button"
-     href="https://docs.google.com/forms/d/e/1FAIpQLScORCXhqDh10JIC2_aoRw6GzddMWc_GHPfkbiEf_-VDFXwrwg/viewform"
-     target="_blank"
-     rel="noopener noreferrer">
-    ✦ Suggest it here ✦
-  </a>
+  <h2>Have an idea? I'd love to hear it!</h2>
+  <p>Think something is missing? Have a word, theme or suggestion you'd love to see? Leave it below!</p>
+
+  <div class="feedback-form">
+    <iframe
+      src="https://docs.google.com/forms/d/e/1FAIpQLScORCXhqDh10JIC2_aoRw6GzddMWc_GHPfkbiEf_-VDFXwrwg/viewform?embedded=true"
+      width="100%"
+      height="677"
+      frameborder="0"
+      marginheight="0"
+      marginwidth="0">
+      Loading…
+    </iframe>
+  </div>
 </section>
-    <p class="footer">
-  Made with care by
-  <a href="https://lnk.bio/Kaeleaf" target="_blank" rel="noopener noreferrer">
-    Kaeleaf Studio
-  </a>
-</p>
+
+    <p class="footer">Made with care by <span>Kaeleaf Studio</span></p>
   </main>
 
   <script>
