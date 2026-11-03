@@ -29,10 +29,9 @@
       place-items: center;
       color: var(--ink);
       background:
-        radial-gradient(ellipse at 10% 8%, rgba(230,185,200,.24), transparent 29%),
-  radial-gradient(ellipse at 90% 88%, rgba(169,200,220,.26), transparent 30%),
-  radial-gradient(ellipse at 78% 10%, rgba(201,189,223,.18), transparent 24%),
-  var(--paper);
+        radial-gradient(ellipse at 12% 8%, rgba(183,126,121,.10), transparent 28%),
+        radial-gradient(ellipse at 90% 90%, rgba(99,123,97,.12), transparent 30%),
+        var(--paper);
       font-family: Georgia, "Times New Roman", serif;
     }
     .page { width: min(100%, 720px); text-align: center; }
@@ -85,7 +84,7 @@
     }
     .word { display: inline-block; }
     .word:first-child { color: var(--green-dark); }
-    .word:last-child { color: #a878a0; }
+    .word:last-child { color: #9b6865; }
     .ampersand { color: #b6ad9b; font-size: .55em; font-style: italic; }
     .hint {
       min-height: 20px;
@@ -128,6 +127,41 @@
       .copy { margin: 10px 0 0; }
       .generate, .copy { min-width: 190px; }
     }
+.feedback-section {
+  margin-top: 45px;
+  padding: 28px 24px;
+  border-radius: 22px;
+  background: linear-gradient(135deg, #edf5ed, #f1edf8, #fceef2);
+  text-align: center;
+}
+
+.feedback-section h2 {
+  color: #648b72;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.feedback-section p {
+  color: #7d8982;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  max-width: 500px;
+  margin: 0 auto 22px;
+}
+
+.feedback-form {
+  background: #fffefa;
+  border-radius: 16px;
+  overflow: hidden;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.feedback-form iframe {
+  display: block;
+  width: 100%;
+  border: none;
+}
   </style>
 </head>
 <body>
@@ -148,6 +182,23 @@
       <button class="generate" id="generate" type="button">✦ Generate a prompt ✦</button>
       <button class="copy" id="copy" type="button">Copy prompt</button>
     </section>
+
+<section class="feedback-section">
+  <h2>Have an idea? I'd love to hear it!</h2>
+  <p>Think something is missing? Have a word, theme or suggestion you'd love to see? Leave it below!</p>
+
+  <div class="feedback-form">
+    <iframe
+      src="https://docs.google.com/forms/d/e/1FAIpQLScORCXhqDh10JIC2_aoRw6GzddMWc_GHPfkbiEf_-VDFXwrwg/viewform?embedded=true"
+      width="100%"
+      height="677"
+      frameborder="0"
+      marginheight="0"
+      marginwidth="0">
+      Loading…
+    </iframe>
+  </div>
+</section>
 
     <p class="footer">Made with care by <span>Kaeleaf Studio</span></p>
   </main>
