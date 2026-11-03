@@ -123,13 +123,58 @@
       background: var(--paper-deep);
     }
     .copy:hover { background: #e5dece; }
+.feedback-section {
+  margin-top: 35px;
+  padding: 25px 20px;
+  border-radius: 22px;
+  background: linear-gradient(135deg, #edf5ed, #f1edf8, #fceef2);
+  text-align: center;
+}
+
+.feedback-section h2 {
+  color: var(--green-dark);
+  font-size: 1.4rem;
+  margin-bottom: 8px;
+}
+
+.feedback-section p {
+  color: var(--muted);
+  font: 0.95rem/1.6 Arial, sans-serif;
+  max-width: 500px;
+  margin: 0 auto 18px;
+}
+
+.feedback-button {
+  display: inline-block;
+  padding: 12px 25px;
+  border-radius: 30px;
+  background: #8fb99a;
+  color: #fffefa;
+  text-decoration: none;
+  font-weight: 600;
+  font: 600 13px Arial, sans-serif;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.feedback-button:hover {
+  background: #729c7d;
+  transform: translateY(-2px);
+}
     .footer {
       margin: 24px 0 0;
       color: var(--muted);
       font: 11px/1.6 Arial, sans-serif;
       letter-spacing: .04em;
     }
-    .footer span { color: var(--rose); }
+.footer a {
+  color: var(--rose);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
     @media (max-width: 480px) {
       body { padding-inline: 13px; }
       .generator { border-radius: 19px; }
@@ -160,21 +205,20 @@
 <section class="feedback-section">
   <h2>Have an idea? I'd love to hear it!</h2>
   <p>Think something is missing? Have a word, theme or suggestion you'd love to see? Leave it below!</p>
-
-  <div class="feedback-form">
-    <iframe
-      src="https://docs.google.com/forms/d/e/1FAIpQLScORCXhqDh10JIC2_aoRw6GzddMWc_GHPfkbiEf_-VDFXwrwg/viewform?embedded=true"
-      width="100%"
-      height="677"
-      frameborder="0"
-      marginheight="0"
-      marginwidth="0">
-      Loading…
-    </iframe>
-  </div>
+  <a class="feedback-button"
+     href="https://docs.google.com/forms/d/e/1FAIpQLScORCXhqDh10JIC2_aoRw6GzddMWc_GHPfkbiEf_-VDFXwrwg/viewform"
+     target="_blank"
+     rel="noopener noreferrer">
+    ✦ Suggest it here ✦
+  </a>
 </section>
 
-    <p class="footer">Made with care by <span>Kaeleaf Studio</span></p>
+   <p class="footer">
+  Made with care by
+  <a href="https://lnk.bio/Kaeleaf" target="_blank" rel="noopener noreferrer">
+    Kaeleaf Studio
+  </a>
+</p>
   </main>
 
   <script>
