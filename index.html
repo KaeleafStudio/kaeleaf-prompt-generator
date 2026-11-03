@@ -120,7 +120,15 @@
       font: 11px/1.6 Arial, sans-serif;
       letter-spacing: .04em;
     }
-    .footer span { color: var(--rose); }
+    .footer a {
+  color: var(--rose);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+} }
     @media (max-width: 480px) {
       body { padding-inline: 13px; }
       .generator { border-radius: 19px; }
@@ -196,7 +204,12 @@
     ✦ Suggest it here ✦
   </a>
 </section>
-    <p class="footer">Made with care by <span>Kaeleaf Studio</span></p>
+    <p class="footer">
+  Made with care by
+  <a href="https://lnk.bio/Kaeleaf" target="_blank" rel="noopener noreferrer">
+    Kaeleaf Studio
+  </a>
+</p>
   </main>
 
   <script>
